@@ -339,7 +339,7 @@
   async function checkServerStatus() {
     const statusEl = document.querySelector(".status");
     try {
-      const res = await fetch("http://209.38.109.240/status");
+      const res = await fetch("http://206.189.102.230/status");
       const data = await res.json();
       if (data.connected) {
         statusEl.innerHTML = `<i class="fas fa-circle" style="color:limegreen;"></i> Connected`;
